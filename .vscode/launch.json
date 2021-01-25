@@ -8,11 +8,27 @@
       "name": "Launch Deno",
       "request": "launch",
       "type": "pwa-node",
-      "program": "main.ts",
+      "program": "mod.ts",
       "cwd": "${workspaceFolder}",
       "runtimeExecutable": "deno",
       "runtimeArgs": [
         "run",
+        "--unstable",
+        "--inspect-brk",
+        "--allow-all",
+        "--allow-env"
+      ],
+      "outputCapture": "std",
+      "attachSimplePort": 9229
+    },
+    {
+      "name": "Launch tests",
+      "request": "launch",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": [
+        "test",
         "--unstable",
         "--inspect-brk",
         "--allow-all",
