@@ -4,7 +4,7 @@ port from <https://github.com/node-steam/> and <https://github.com/DoctorMcKay/n
 
 I copied UINT64 over from <https://github.com/pierrec/js-cuint>
 
-I have removed aliases.
+I have removed aliases (short hand versions).
 
 Had to do some manual work to fix tests.
 
