@@ -1,6 +1,6 @@
 # deno-steamid
 
-port from <https://github.com/node-steam/> and <https://github.com/DoctorMcKay/node-steamid/>
+port from <https://github.com/node-steam/id> and <https://github.com/DoctorMcKay/node-steamid/>
 
 I copied UINT64 over from <https://github.com/pierrec/js-cuint>
 
