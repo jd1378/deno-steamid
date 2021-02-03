@@ -297,6 +297,10 @@ export class SteamID {
     x.format = "accountid";
     return x;
   }
+
+  public static Universe = Universe;
+  public static Type = Type;
+  public static Instance = Instance;
 }
 
 export * from "./enums.ts";
