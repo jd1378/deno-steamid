@@ -16,7 +16,7 @@ some renames from `DoctorMcKay/node-steamid`:
 ## simple usage
 
 ```ts
-import { SteamID } from 'https://deno.land/x/steamid@v1.0.0/mod.ts';
+import { SteamID } from 'https://deno.land/x/steamid@v1.1.0/mod.ts';
 const sid = new SteamID("steam2 or steam3 or sid64 here");
 // ...
 ```
