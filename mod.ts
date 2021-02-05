@@ -53,17 +53,17 @@ export class SteamID {
     if (!input) {
       return;
     }
-
-    if (typeof input === "string" && input.match(regex.steam2)) {
-      const matches = input.match(regex.steam2) as RegExpMatchArray;
+    let matches;
+    if (typeof input === "string" && (matches = input.match(regex.steam2))) {
       this.format = "steam2";
       this.universe = parseInt(matches[1], 10) || Universe.PUBLIC;
       this.type = Type.INDIVIDUAL;
       this.instance = Instance.DESKTOP;
       this.accountid = (parseInt(matches[3], 10) * 2) +
         parseInt(matches[2], 10);
-    } else if (typeof input === "string" && input.match(regex.steam3)) {
-      const matches = input.match(regex.steam3) as RegExpMatchArray;
+    } else if (
+      typeof input === "string" && (matches = input.match(regex.steam3))
+    ) {
       const char = matches[1];
       this.format = "steam3";
       this.universe = parseInt(matches[2], 10);
