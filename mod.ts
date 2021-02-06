@@ -172,6 +172,21 @@ export class SteamID {
   };
 
   /**
+   * Alias of getSteam2ID
+   * @deprecated
+   * @return {string}
+   * @hidden
+   */
+  public getSteam2RenderedID = this.getSteam2ID;
+  /**
+   * Alias of getSteam2ID
+   * @deprecated
+   * @return {string}
+   * @hidden
+   */
+  public steam2 = this.getSteam2ID;
+
+  /**
      * Render this ID in the Steam3 format
      * @return {string}
      */
@@ -193,6 +208,21 @@ export class SteamID {
       ? ":" + this.instance
       : "")}]`;
   };
+
+  /**
+   * Alias of getSteam3ID
+   * @deprecated
+   * @return {string}
+   * @hidden
+   */
+  public getSteam3RenderedID = this.getSteam3ID;
+  /**
+   * Alias of getSteam3ID
+   * @deprecated
+   * @return {string}
+   * @hidden
+   */
+  public steam3 = this.getSteam3ID;
 
   /**
      * Render this ID in the 64-bit format
